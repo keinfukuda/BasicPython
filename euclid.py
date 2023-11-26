@@ -1,45 +1,22 @@
-a = input("a の値を入力: ")
-b = input("b の値を入力: ")
+
 
 # TODO
-while True:
-     if b < a:
-         b, a = a, b
-     elif b % a == 0:
-         print(a)
-         break
-     b, a = a, b % a
+def euclid(a, b):
+    while True:
+        if b < a:
+            b, a = a, b
+        elif b % a == 0:
+            print(a)
+            break
+        else :
+            b, a =a, b % a
 
 
-a, b =10, 20
-while True:
-     if b < a:
-         b, a = a, b
-     elif b % a == 0:
-         print(a)
-         break
-     b, a = a, b % a
+euclid(10, 20)
+#10
 
-10
+euclid(14, 91)
+#7
 
-a, b =14, 91
-while True:
-     if b < a:
-         b, a = a, b
-     elif b % a == 0:
-         print(a)
-         break
-     b, a = a, b % a
-
-7
-
-a, b =91, 14
-while True:
-     if b < a:
-         b, a = a, b
-     elif b % a == 0:
-         print(a)
-         break
-     b, a = a, b % a
-
-7
+euclid(91, 14)
+#7
