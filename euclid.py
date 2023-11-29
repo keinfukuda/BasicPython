@@ -1,6 +1,7 @@
 
 
 # TODO
+#問3
 def euclid(a, b):
     while True:
         if b < a:
@@ -12,11 +13,17 @@ def euclid(a, b):
             b, a =a, b % a
 
 
-euclid(10, 20)
-#10
-
-euclid(14, 91)
-#7
-
-euclid(91, 14)
-#7
+#問4
+def euclid(a, b):
+    while True:
+        if b < a:
+            b, a = a, b
+        elif b % a == 0:
+            if a == 1:
+                print(bool(1))
+                break
+            else:
+                print(bool(0))
+                break
+        else :
+            b, a =a, b % a

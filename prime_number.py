@@ -1,31 +1,33 @@
 
 
 # TODO
-def primenumber(x):
+def primenumber(n):
     count = 2
-    if x == 1:
-        print("素数じゃない")
-    elif x == 2:
-        print("素数である")
+    if n == 1:
+        print(bool(0))
+    elif n == 2:
+        print(bool(1))
+    elif not (n).is_integer() or not n > 1:
+        print("error")
     else:
         while True:
-            if (x / count).is_integer():
-                print("素数じゃない")
+            if (n / count).is_integer():
+                print(bool(0))
                 break
-            elif count == x-1:
-                print("素数である")
+            elif count == n-1:
+                print(bool(1))
                 break
             else:
                 count = count + 1
-#xがある数で割り切れる、countがx - 1になるでbreak
+#nがある数で割り切れる、countがn - 1になるでbreak
 primenumber(61)
-#素数である
+True
 
 primenumber(10)
-#素数じゃない
+False
 
 primenumber(1)
-#素数じゃない
+False
 
 primenumber(2)
-#素数である
+True
