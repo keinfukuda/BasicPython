@@ -4,30 +4,30 @@
 def primenumber(n):
     count = 2
     if n == 1:
-        print(bool(0))
+        return False
     elif n == 2:
-        print(bool(1))
+        return True
     elif not (n).is_integer() or not n > 1:
-        print("error")
+        return print("error")
     else:
         while True:
             if (n / count).is_integer():
-                print(bool(0))
+                return False
                 break
-            elif count == n-1:
-                print(bool(1))
+            elif count > n ** (1/2):
+                return True
                 break
             else:
                 count = count + 1
 #nがある数で割り切れる、countがn - 1になるでbreak
 primenumber(61)
-True
+#True
 
 primenumber(10)
-False
+#False
 
 primenumber(1)
-False
+#False
 
 primenumber(2)
-True
+#True

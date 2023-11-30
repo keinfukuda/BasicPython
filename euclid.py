@@ -7,23 +7,23 @@ def euclid(a, b):
         if b < a:
             b, a = a, b
         elif b % a == 0:
-            print(a)
+            return a
             break
         else :
             b, a =a, b % a
 
 
 #問4
-def euclid(a, b):
+def euclid2(a, b):
     while True:
         if b < a:
             b, a = a, b
         elif b % a == 0:
             if a == 1:
-                print(bool(1))
+                return True
                 break
             else:
-                print(bool(0))
+                return False
                 break
         else :
             b, a =a, b % a
