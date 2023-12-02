@@ -1,22 +1,29 @@
 
 
 # TODO
+#問3
 def euclid(a, b):
     while True:
         if b < a:
             b, a = a, b
         elif b % a == 0:
-            print(a)
+            return a
             break
         else :
             b, a =a, b % a
 
 
-euclid(10, 20)
-#10
-
-euclid(14, 91)
-#7
-
-euclid(91, 14)
-#7
+#問4
+def euclid2(a, b):
+    while True:
+        if b < a:
+            b, a = a, b
+        elif b % a == 0:
+            if a == 1:
+                return True
+                break
+            else:
+                return False
+                break
+        else :
+            b, a =a, b % a
